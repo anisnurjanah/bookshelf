@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+<header class="head_bar">
+  <h1 class="head_bar__title">Bookshelf Apps</h1>
+</header></div>
+<main>
+  <div id="content">
+  <section class="input_section">
+    <h2>Masukkan Buku Baru</h2>
+    <form id="inputBook" class="form">
+      <div class="input">
+        <label for="title">Judul</label>
+        <input id="title" type="text" required>
+      </div>
+      <div class="input">
+        <label for="author">Penulis</label>
+        <input id="author" type="text" required>
+      </div>
+      <div class="input">
+        <label for="year">Tahun</label>
+        <input id="year" type="number" required>
+      </div>
+      <div class="input_inline">
+        <label for="BookIsComplete">Selesai dibaca</label>
+        <input id="BookIsComplete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+    </form>
+  </section>
+   </div>
+
+  <aside>
+  <section class="book_shelf">
+    <h2>Belum selesai dibaca</h2>
+    
+    <div id="uncompleteBooks" class="book_list">
+      <article class="book_item"> 
+        <h3>Book title</h3> 
+        <p>Penulis: John Doe</p> 
+        <p>Tahun: 2002</p> 
+     
+        <div class="action"> 
+          <button class="green">Selesai dibaca</button> 
+          <button class="red">Hapus buku</button> 
+        </div> 
+      </article>
+    </div>
+  </section>
+  
+  <section class="book_shelf">
+    <h2>Selesai dibaca</h2>
+    
+    <div id="completeBooks" class="book_list">
+       <article class="book_item"> 
+         <h3>Book title</h3> 
+         <p>Penulis: John Doe</p> 
+         <p>Tahun: 2002</p> 
+          
+         <div class="action"> 
+           <button class="green">Belum selesai dibaca</button> 
+           <button class="red">Hapus buku</button> 
+         </div> 
+       </article> 
+    </div>
+  </section>
+</aside>
+</main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
